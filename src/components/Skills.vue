@@ -13,24 +13,49 @@ const skills = [
 </script>
 
 <template>
-  <section class="container py-5">
-    <div class="mb-5">
-      <h2 class="fw-bold">My <span class="text-success">Skills</span></h2>
-      <p class="text-secondary">Technologies I use and continue to improve on.</p>
-      <hr class="border-success border-3 w-25">
-    </div>
+  <section class="bg-white text-dark py-5">
+    <div class="container">
 
-    <div class="row g-4">
-      <div v-for="skill in skills" :key="skill.name" class="col-6 col-md-4 col-lg-3">
-        <div class="card bg-black text-light text-center h-100 border-secondary">
-          <div class="card-body py-4">
-            <i :class="['bi', skill.icon, skill.color, 'display-4']"></i>
-            <h5 class="mt-3">{{ skill.name }}</h5>
-            <p class="text-secondary small mb-0">{{ skill.name }} development</p>
+      <!-- Section heading -->
+      <div class="mb-5">
+        <h2 class="fw-bold display-6">
+          My <span class="text-success">Skills</span>
+        </h2>
+
+        <p class="text-secondary">
+          Technologies I use and continue to improve on.
+        </p>
+
+        <hr class="border-success border-3 w-25 opacity-100">
+      </div>
+
+      <!-- Skills cards -->
+      <div class="row g-4">
+        <div
+          v-for="skill in skills"
+          :key="skill.name"
+          class="col-6 col-md-4 col-lg-3"
+        >
+          <div
+            class="card bg-black text-light text-center h-100 border-secondary rounded-3 shadow-sm"
+          >
+            <div class="card-body py-4">
+              <i
+                :class="['bi', skill.icon, skill.color, 'display-4']"
+              ></i>
+
+              <h5 class="fw-bold mt-3">{{ skill.name }}</h5>
+
+              <p class="text-secondary small mb-0">
+                {{ skill.name }} development
+              </p>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 </template>
 
+ 

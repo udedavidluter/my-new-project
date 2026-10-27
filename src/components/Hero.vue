@@ -1,37 +1,50 @@
 <template>
-  <section class="container py-5 min-vh-100 d-flex align-items-center">
-    <div class="row align-items-center w-100">
-      <div class="col-md-7">
-        <p class="text-success fw-bold mb-2">Hello, I'm</p>
+  <section class="bg-white text-dark min-vh-100 d-flex align-items-center py-5">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <!-- Hero text -->
+        <div class="col-md-7">
+          <p class="text-success fw-bold text-uppercase mb-3">Hello, I'm</p>
 
-        <h1 class="display-4 fw-bold">
-          Ude David <span class="text-success">Luter</span>
-        </h1>
+          <h1 class="display-3 fw-bold mb-3">
+            Ude David
+            <span class="text-success">Luter</span>
+          </h1>
 
-        <h2 class="h3 mb-3">Frontend Web Developer</h2>
+          <h2 class="h3 fw-semibold mb-4">Frontend Web Developer</h2>
 
-        <p class="lead text-secondary">
-          I am a Computer Science student and aspiring web developer passionate
-          about building modern, responsive, and user-friendly websites using
-          Vue.js, JavaScript, Bootstrap and firebase.
-        </p>
+          <p class="lead text-secondary mb-4">
+            I am a Computer Science student and aspiring web developer
+            passionate about building modern, responsive, and user-friendly
+            websites using Vue.js, JavaScript, Bootstrap, and Firebase.
+          </p>
 
-        <button class="btn btn-success me-2" @click="goToSection('projects')">
-          View My Projects
-        </button>
+          <div class="d-flex flex-wrap gap-3">
+            <button
+              class="btn btn-primary btn-lg"
+              @click="goToSection('projects')"
+            >
+              View My Projects
+            </button>
 
-        <button class="btn btn-outline-light" @click="goToSection('contact')">
-          Contact Me
-        </button>
-      </div>
+            <button
+              class="btn btn-success btn-lg"
+              @click="goToSection('contact')"
+            >
+              Contact Me
+            </button>
+          </div>
+        </div>
 
-      <div class="col-md-5 text-center mt-4 mt-md-0">
-        <img
-          src="/images/david.jpg"
-          alt="Ude David Luter profile picture"
-          class="img-fluid rounded-circle border border-success border-4 shadow"
-          style="width: 250px; height: 250px; object-fit: cover"
-        />
+        <!-- Profile picture -->
+        <div class="col-md-5 text-center">
+          <img
+            src="/images/david.jpg"
+            alt="Ude David Luter profile picture"
+            class="img-fluid rounded-circle border border-success border-4 shadow"
+            style="width: 280px; height: 280px; object-fit: cover"
+          />
+        </div>
       </div>
     </div>
   </section>

@@ -13,7 +13,8 @@
 
           <p class="text-secondary">
             My name is Ude David Luter. I am a Computer Science student at
-            Abubakar Tafawa Balewa University (ATBU), Bauchi, with a strong
+
+
             interest in web development.
           </p>
 
@@ -79,3 +80,4 @@
     </div>
   </section>
 </template>
+ 
